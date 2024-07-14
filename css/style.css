@@ -1,0 +1,108 @@
+
+.togell{
+    left: 100%;
+    width: 50px;
+
+}
+
+.my-animate{
+    width: fit-content;
+    margin: 0;
+    padding: 10px;
+    
+    
+}
+
+header{
+    width: 22%;
+    left:-22%
+}
+
+i{
+    cursor: pointer;
+}
+
+header h3{
+    cursor: pointer;
+    
+}
+
+
+
+.layer{
+    top: 100%;
+    background-color: rgba(255, 255, 255 , .8);
+    transition: 1s all;
+    height: 100%;
+
+}
+
+
+.inner:hover .layer{
+    top: 0%;
+
+
+}
+
+
+
+
+.Details .fa-x{
+    top: 10%;
+    right:-5%;
+}
+
+
+
+
+/***** Loader *****/
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/***** End Loader *****/
+
